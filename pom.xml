@@ -15,6 +15,8 @@
 	<description>An attempt to create a Spring + JGiven + Selenium suite</description>
 	<properties>
 		<java.version>11</java.version>
+		<webdrivermanager.version>4.2.2</webdrivermanager.version>
+		<selenium.version>3.141.59</selenium.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -62,6 +64,18 @@
 			<groupId>com.tngtech.jgiven</groupId>
 			<artifactId>jgiven-maven-plugin</artifactId>
 			<version>1.0.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>${webdrivermanager.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium.version}</version>
 		</dependency>
 	</dependencies>
 
