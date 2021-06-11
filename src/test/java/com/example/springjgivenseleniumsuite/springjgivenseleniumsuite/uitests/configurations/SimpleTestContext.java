@@ -6,5 +6,5 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableJGiven
-@ComponentScan
+@ComponentScan(basePackages = {"com.example.springjgivenseleniumsuite.springjgivenseleniumsuite"})
 public class SimpleTestContext {}
