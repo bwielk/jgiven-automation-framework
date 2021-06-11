@@ -1,6 +1,11 @@
-package com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests;
+package com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests.tests;
 
 
+import com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests.configurations.SimpleTestConfig;
+import com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests.configurations.SimpleTestContext;
+import com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests.steps.GivenSimpleTest;
+import com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests.steps.ThenSimpleTest;
+import com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests.steps.WhenSimpleTest;
 import com.tngtech.jgiven.annotation.As;
 import com.tngtech.jgiven.annotation.JGivenConfiguration;
 import com.tngtech.jgiven.integration.spring.SpringRuleScenarioTest;

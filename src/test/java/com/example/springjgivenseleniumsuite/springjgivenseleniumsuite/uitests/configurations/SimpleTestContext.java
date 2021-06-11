@@ -1,4 +1,4 @@
-package com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests;
+package com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests.configurations;
 
 import com.tngtech.jgiven.integration.spring.EnableJGiven;
 import org.springframework.context.annotation.ComponentScan;

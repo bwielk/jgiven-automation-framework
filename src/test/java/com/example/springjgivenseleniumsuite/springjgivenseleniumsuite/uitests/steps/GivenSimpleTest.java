@@ -1,4 +1,4 @@
-package com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests;
+package com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests.steps;
 
 import com.tngtech.jgiven.Stage;
 import com.tngtech.jgiven.annotation.ProvidedScenarioState;
@@ -13,12 +13,12 @@ public class GivenSimpleTest extends Stage<GivenSimpleTest> {
     @ProvidedScenarioState
     Integer number2;
 
-    GivenSimpleTest first_value_is_$number(Integer number) throws Exception{
+    public GivenSimpleTest first_value_is_$number(Integer number) throws Exception{
         number1 = number;
         return this;
     }
 
-    GivenSimpleTest second_value_is_$number(Integer number) throws Exception{
+    public GivenSimpleTest second_value_is_$number(Integer number) throws Exception{
         number2 = number;
         return this;
     }

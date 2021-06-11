@@ -1,4 +1,4 @@
-package com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests;
+package com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests.steps;
 
 import com.tngtech.jgiven.annotation.ExpectedScenarioState;
 import com.tngtech.jgiven.annotation.ProvidedScenarioState;
