@@ -1,6 +1,6 @@
 package com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests.tests;
 import com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.SpringjgivenseleniumsuiteApplication;
-import com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.commons.WebDriverComponent;
+import com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.ui.commons.WebDriverComponent;
 import com.tngtech.jgiven.integration.spring.SpringRuleScenarioTest;
 import com.tngtech.jgiven.report.model.ExecutionStatus;
 import com.tngtech.jgiven.report.model.ScenarioModel;

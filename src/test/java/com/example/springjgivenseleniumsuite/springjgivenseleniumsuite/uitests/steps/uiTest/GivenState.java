@@ -1,6 +1,6 @@
 package com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests.steps.uiTest;
 
-import com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.pages.LoginPage;
+import com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.ui.pages.LoginPage;
 import com.tngtech.jgiven.Stage;
 import com.tngtech.jgiven.integration.spring.JGivenStage;
 import org.springframework.beans.factory.annotation.Autowired;
