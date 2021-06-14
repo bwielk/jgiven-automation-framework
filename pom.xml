@@ -19,6 +19,13 @@
 		<selenium.version>3.141.59</selenium.version>
 		<feign.version>11.2</feign.version>
 		<spring-cloud.version>2020.0.0-SNAPSHOT</spring-cloud.version>
+		<junit.version>4.12</junit.version>
+		<jgiven.version>1.0.0</jgiven.version>
+		<jackson.version>2.11.3</jackson.version>
+		<feign-jackson.version>9.3.1</feign-jackson.version>
+		<surefire.version>3.0.0-M3</surefire.version>
+		<spring-open-feign-starter.version>3.0.2</spring-open-feign-starter.version>
+		<spring-boot-maven-plugin.version>2.4.0</spring-boot-maven-plugin.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -41,45 +48,34 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.tngtech.jgiven</groupId>
 			<artifactId>jgiven-junit</artifactId>
-			<version>1.0.0</version>
+			<version>${jgiven.version}</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.tngtech.jgiven/jgiven-spring-junit4 -->
 		<dependency>
 			<groupId>com.tngtech.jgiven</groupId>
 			<artifactId>jgiven-spring-junit4</artifactId>
-			<version>1.0.0</version>
+			<version>${jgiven.version}</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.tngtech.jgiven/jgiven-maven-plugin -->
-		<dependency>
-			<groupId>com.tngtech.jgiven</groupId>
-			<artifactId>jgiven-maven-plugin</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
 			<version>${webdrivermanager.version}</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>${selenium.version}</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/io.github.openfeign/feign-core -->
 		<dependency>
 			<groupId>io.github.openfeign</groupId>
 			<artifactId>feign-core</artifactId>
@@ -88,23 +84,22 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
-			<version>2.11.3</version>
+			<version>${jackson.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.11.3</version>
+			<version>${jackson.version}</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/io.github.openfeign/feign-jackson -->
 		<dependency>
 			<groupId>io.github.openfeign</groupId>
 			<artifactId>feign-jackson</artifactId>
-			<version>9.3.1</version>
+			<version>${feign-jackson.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
-			<version>3.0.2</version>
+			<version>${spring-open-feign-starter.version}</version>
 		</dependency>
 	</dependencies>
 
@@ -113,19 +108,19 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M3</version>
+				<version>${surefire.version}</version>
 				<dependencies>
 					<dependency>
 						<groupId>org.apache.maven.surefire</groupId>
 						<artifactId>surefire-junit47</artifactId>
-						<version>3.0.0-M3</version>
+						<version>${surefire.version}</version>
 					</dependency>
 				</dependencies>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-report-plugin</artifactId>
-				<version>3.0.0-M3</version>
+				<version>${surefire.version}</version>
 				<configuration>
 					<outputDirectory>${basedir}/target/surefire-reports</outputDirectory>
 				</configuration>
@@ -133,12 +128,12 @@
 			<plugin>
 				<groupId>com.tngtech.jgiven</groupId>
 				<artifactId>jgiven-maven-plugin</artifactId>
-				<version>1.0.0</version>
+				<version>${jgiven.version}</version>
 			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>2.4.0</version>
+				<version>${spring-boot-maven-plugin.version}</version>
 				<configuration>
 					<excludes>
 						<exclude>
