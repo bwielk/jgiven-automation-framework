@@ -1,4 +1,4 @@
-package api.configuration;
+package api.components.configuration;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -19,7 +19,7 @@ import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 
 @Configuration
-@EnableFeignClients(basePackages = {"api.clients"})
+@EnableFeignClients(basePackages = {"api.components.clients"})
 public class APIConfiguration {
 
     public static final ObjectMapper OBJECT_MAPPER = new ObjectMapper()

@@ -1,8 +1,8 @@
-package api.clients;
+package api.components.clients;
 
-import api.model.AssociatedSkillsDTO;
-import api.model.JobDTO;
-import api.model.SkillsDTO;
+import api.components.model.AssociatedSkillsDTO;
+import api.components.model.JobDTO;
+import api.components.model.SkillsDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;

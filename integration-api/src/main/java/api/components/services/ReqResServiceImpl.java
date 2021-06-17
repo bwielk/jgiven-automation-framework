@@ -1,7 +1,7 @@
-package api.services;
+package api.components.services;
 
-import api.clients.ReqResApi;
-import api.model.PersonsDTO;
+import api.components.clients.ReqResApi;
+import api.components.model.PersonsDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;

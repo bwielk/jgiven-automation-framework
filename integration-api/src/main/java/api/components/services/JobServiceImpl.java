@@ -1,9 +1,9 @@
-package api.services;
+package api.components.services;
 
-import api.clients.JobApi;
-import api.model.AssociatedSkillsDTO;
-import api.model.JobDTO;
-import api.model.SkillsDTO;
+import api.components.clients.JobApi;
+import api.components.model.AssociatedSkillsDTO;
+import api.components.model.JobDTO;
+import api.components.model.SkillsDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;

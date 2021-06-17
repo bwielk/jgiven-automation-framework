@@ -1,4 +1,4 @@
-package api.model;
+package api.components.model;
 
 import java.util.List;
 

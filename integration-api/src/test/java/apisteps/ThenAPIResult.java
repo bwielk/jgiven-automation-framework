@@ -1,7 +1,7 @@
 package apisteps;
 
-import api.model.PersonsDTO;
-import api.services.ReqResServiceImpl;
+import api.components.model.PersonsDTO;
+import api.components.services.ReqResServiceImpl;
 import com.tngtech.jgiven.Stage;
 import com.tngtech.jgiven.annotation.ProvidedScenarioState;
 import com.tngtech.jgiven.integration.spring.JGivenStage;

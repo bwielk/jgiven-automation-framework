@@ -1,6 +1,6 @@
-package api.clients;
+package api.components.clients;
 
-import api.model.PersonsDTO;
+import api.components.model.PersonsDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;

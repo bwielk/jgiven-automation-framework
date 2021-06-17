@@ -1,6 +1,6 @@
 package apisteps;
 
-import api.services.ReqResServiceImpl;
+import api.components.services.ReqResServiceImpl;
 import com.tngtech.jgiven.Stage;
 import com.tngtech.jgiven.integration.spring.JGivenStage;
 import org.springframework.beans.factory.annotation.Autowired;

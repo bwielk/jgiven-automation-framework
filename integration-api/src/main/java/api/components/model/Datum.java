@@ -1,4 +1,4 @@
-package api.model;
+package api.components.model;
 
 public class Datum {
 

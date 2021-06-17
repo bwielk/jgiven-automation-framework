@@ -6,5 +6,5 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableJGiven
-@ComponentScan(basePackages = {"api"})
+@ComponentScan(basePackages = {"api.components"})
 public class SimpleTestContext {}
