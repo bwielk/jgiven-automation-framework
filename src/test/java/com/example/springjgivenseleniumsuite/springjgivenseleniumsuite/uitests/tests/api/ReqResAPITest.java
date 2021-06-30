@@ -1,5 +1,6 @@
 package com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests.tests.api;
 
+
 import com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests.configurations.SimpleTestConfig;
 import com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests.configurations.SimpleTestContext;
 import com.example.springjgivenseleniumsuite.springjgivenseleniumsuite.uitests.steps.apiTest.GivenAPIState;
