@@ -16,13 +16,8 @@ public class WebDriverComponent {
         capabilities.setCapability("name", nameOfTestMethod);
         capabilities.setCapability("elementScrollBehavior", true);
 
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver(capabilities);
-        System.out.println("-----------------    " + nameOfTestMethod + "    -----------------");
-        driver.manage().window().maximize();
-        WebDriverWait wait = new WebDriverWait(driver, 60);
-        wait.until(webDriver -> ((JavascriptExecutor) driver).executeScript("return document.readyState").toString().equals("complete"));
-        driver.manage().deleteAllCookies();
+        WebDriverManager wdm = WebDriverManager.chromedriver().browserInDocker().enableVnc().enableRecording();
+        WebDriver driver = wdm.create();
         webdriver.set(driver);
     }
 

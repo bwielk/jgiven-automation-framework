@@ -15,7 +15,7 @@
 	<description>An attempt to create a Spring + JGiven + Selenium suite</description>
 	<properties>
 		<java.version>11</java.version>
-		<webdrivermanager.version>4.2.2</webdrivermanager.version>
+		<webdrivermanager.version>5.0.3</webdrivermanager.version>
 		<selenium.version>3.141.59</selenium.version>
 		<feign.version>11.2</feign.version>
 		<spring-cloud.version>2020.0.0-SNAPSHOT</spring-cloud.version>
