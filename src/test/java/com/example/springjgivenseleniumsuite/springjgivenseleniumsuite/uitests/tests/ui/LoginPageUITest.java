@@ -24,4 +24,12 @@ public class LoginPageUITest extends BaseUITest<GivenState, WhenAction, ThenResu
         when().the_user_enters_valid_credentials();
         then().the_user_can_view_the_inventory_page();
     }
+
+    @Test
+    @As("Login attempt for a locked out account")
+    public void loginAttemptForALockedOutAccount(){
+        given().a_user_has_opened_the_login_page();
+        when().the_user_enters_credentials_for_a_locked_out_account();
+        then().the_user_can_see_the_error_message_for_a_failed_login_attempt();
+    }
 }

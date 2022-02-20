@@ -20,4 +20,11 @@ public class WhenAction extends Stage<WhenAction> {
         loginPage.clickLogin();
         return this;
     }
+
+    public WhenAction the_user_enters_credentials_for_a_locked_out_account(){
+        loginPage.fillUsername(StaticUserData.LOCKED_OUT_USER.getUsername());
+        loginPage.fillPassword(StaticUserData.LOCKED_OUT_USER.getPassword());
+        loginPage.clickLogin();
+        return this;
+    }
 }
