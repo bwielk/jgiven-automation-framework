@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -12,7 +13,7 @@ public class WebDriverComponent {
     public static ThreadLocal<WebDriver> webdriver = new ThreadLocal<>();
 
     public static void launchBrowser(String nameOfTestMethod){
-        DesiredCapabilities capabilities = new DesiredCapabilities();
+        ChromeOptions capabilities = new ChromeOptions();
         capabilities.setCapability("name", nameOfTestMethod);
         capabilities.setCapability("elementScrollBehavior", true);
 
