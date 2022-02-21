@@ -12,6 +12,6 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 @FeignClient(url = "https://reqres.in", name= "ReqResApi")
 public interface ReqResApi {
 
-    @RequestMapping(method = RequestMethod.GET, path = "/api/users?page=2", produces = APPLICATION_JSON_VALUE)
+    @RequestMapping(method = RequestMethod.GET, path = "/api/users", produces = APPLICATION_JSON_VALUE)
     PersonsDTO getAllPersons();
 }
